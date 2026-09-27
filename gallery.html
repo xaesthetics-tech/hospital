@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | VitaNova Hospital</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">
+                <i class="fa-solid fa-plus"></i>
+            </span>
+
+            <span>
+                Vita<span>Nova</span>
+                <small>HOSPITAL</small>
+            </span>
+        </a>
+
+        <nav class="nav" id="nav">
+
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html" class="active">Gallery</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+
+            <a href="enquiry.html" class="nav-button">
+                Book Appointment
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </nav>
+
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </div>
+
+</header>
+
+
+<section class="page-hero">
+
+    <div class="container page-hero-content reveal">
+
+        <div class="eyebrow">
+            <span></span>
+            VITANOVA SPACES
+        </div>
+
+        <h1>
+            A hospital designed
+            <span>for healing.</span>
+        </h1>
+
+        <p>
+            Explore our modern facilities, patient spaces
+            and advanced healthcare environment.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section gallery-section">
+
+    <div class="container">
+
+        <div class="gallery-filter reveal">
+
+            <button class="filter-btn active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="facility">
+                Facilities
+            </button>
+
+            <button class="filter-btn" data-filter="care">
+                Patient Care
+            </button>
+
+            <button class="filter-btn" data-filter="technology">
+                Technology
+            </button>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item large reveal"
+                 data-category="facility">
+
+                <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=85"
+                     alt="Hospital facility">
+
+                <div class="gallery-overlay">
+                    <span>Facilities</span>
+                    <h3>Modern Hospital Environment</h3>
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item reveal"
+                 data-category="care">
+
+                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=85"
+                     alt="Medical team">
+
+                <div class="gallery-overlay">
+                    <span>Patient Care</span>
+                    <h3>Compassionate Care</h3>
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item reveal"
+                 data-category="technology">
+
+                <img src="https://images.unsplash.com/photo-1581093458791-9d42e3c9a5b7?auto=format&fit=crop&w=900&q=85"
+                     alt="Medical technology">
+
+                <div class="gallery-overlay">
+                    <span>Technology</span>
+                    <h3>Advanced Technology</h3>
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item reveal"
+                 data-category="care">
+
+                <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=900&q=85"
+                     alt="Hospital room">
+
+                <div class="gallery-overlay">
+                    <span>Patient Care</span>
+                    <h3>Premium Patient Rooms</h3>
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item large reveal"
+                 data-category="technology">
+
+                <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1200&q=85"
+                     alt="Medical equipment">
+
+                <div class="gallery-overlay">
+                    <span>Technology</span>
+                    <h3>Precision Healthcare</h3>
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item reveal"
+                 data-category="facility">
+
+                <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=900&q=85"
+                     alt="Hospital corridor">
+
+                <div class="gallery-overlay">
+                    <span>Facilities</span>
+                    <h3>Thoughtful Spaces</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- LIGHTBOX -->
+
+<div class="lightbox" id="lightbox">
+
+    <button class="lightbox-close" id="lightboxClose">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <img id="lightboxImage" src="" alt="Gallery preview">
+
+</div>
+
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <a href="index.html" class="logo footer-logo">
+                <span class="logo-icon">
+                    <i class="fa-solid fa-plus"></i>
+                </span>
+
+                <span>
+                    Vita<span>Nova</span>
+                    <small>HOSPITAL</small>
+                </span>
+            </a>
+
+            <p>
+                Advanced healthcare with a human touch.
+            </p>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h4>Explore</h4>
+
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h4>Contact</h4>
+
+            <p>+91 98765 43210</p>
+            <p>care@vitanovahospital.com</p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom container">
+        © 2025 VitaNova Hospital. All Rights Reserved.
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
